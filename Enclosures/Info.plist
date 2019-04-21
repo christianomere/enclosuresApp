@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>your location is required to create a group of players</string>
+	<key>NSLocationUsageDescription</key>
+	<string>your location is required to create a group of players</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Grafier-BlackDisplay.otf</string>
+		<string>Grafier-BlackText.otf</string>
+		<string>Grafier-RegularDisplay.otf</string>
+		<string>Grafier-RegularText.otf</string>
+		<string>Grafier-Variable.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -31,8 +43,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

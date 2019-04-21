@@ -1,0 +1,45 @@
+
+/* Class = "UITextField"; placeholder = "user name"; ObjectID = "8Pr-lw-oyn"; */
+"8Pr-lw-oyn.placeholder" = "user name";
+
+/* Class = "UILabel"; text = "E  N  C  L  O  S  U  R  E  S"; ObjectID = "Acf-hT-GZd"; */
+"Acf-hT-GZd.text" = "E  N  C  L  O  S  U  R  E  S";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "Exi-87-jIa"; */
+"Exi-87-jIa.normalTitle" = "back";
+
+/* Class = "UILabel"; text = "E  N  C  L  O  S  U  R  E  S"; ObjectID = "WfW-WV-1QM"; */
+"WfW-WV-1QM.text" = "E  N  C  L  O  S  U  R  E  S";
+
+/* Class = "UIButton"; normalTitle = "enter"; ObjectID = "XmH-FX-bej"; */
+"XmH-FX-bej.normalTitle" = "enter";
+
+/* Class = "UIButton"; normalTitle = "start"; ObjectID = "bdw-7L-gUG"; */
+"bdw-7L-gUG.normalTitle" = "start";
+
+/* Class = "UIButton"; normalTitle = "about"; ObjectID = "dGq-gX-Wpm"; */
+"dGq-gX-Wpm.normalTitle" = "about";
+
+/* Class = "UIButton"; normalTitle = "search again"; ObjectID = "gFf-An-UMz"; */
+"gFf-An-UMz.normalTitle" = "search again";
+
+/* Class = "UIButton"; normalTitle = "ready"; ObjectID = "lTS-Nw-kem"; */
+"lTS-Nw-kem.normalTitle" = "ready";
+
+/* Class = "UILabel"; text = "E  N  C  L  O  S  U  R  E  S"; ObjectID = "naL-op-Dz2"; */
+"naL-op-Dz2.text" = "E  N  C  L  O  S  U  R  E  S";
+
+/* Class = "UIButton"; normalTitle = "about"; ObjectID = "naw-Ir-pcX"; */
+"naw-Ir-pcX.normalTitle" = "about";
+
+/* Class = "UIButton"; normalTitle = "logout"; ObjectID = "qx6-j1-NRS"; */
+"qx6-j1-NRS.normalTitle" = "logout";
+
+/* Class = "UITextField"; placeholder = "email"; ObjectID = "sWH-Rz-SdY"; */
+"sWH-Rz-SdY.placeholder" = "email";
+
+/* Class = "UILabel"; text = "a game for public space"; ObjectID = "v2a-KV-eGq"; */
+"v2a-KV-eGq.text" = "a game for public space";
+
+/* Class = "UILabel"; text = "a game for public space"; ObjectID = "yjF-KG-oNY"; */
+"yjF-KG-oNY.text" = "a game for public space";
