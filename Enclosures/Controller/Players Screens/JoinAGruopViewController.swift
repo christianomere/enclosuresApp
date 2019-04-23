@@ -27,9 +27,6 @@ class JoinAGruopViewController: UIViewController, UITableViewDelegate, UITableVi
         
         configureTableView()
         
-        /// Dispplay the user name at the tableView
-
-        
     }
     
     //Log out Button Pressed  (back to ViewController)
