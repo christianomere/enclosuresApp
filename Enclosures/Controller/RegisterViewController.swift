@@ -14,8 +14,9 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var logInFeedbackLabel: UILabel!
     
-  // hide Keybord
+    /// hide Keybord
     func HidKeyboard(){
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeboard))
         view.addGestureRecognizer(tap)
@@ -26,6 +27,8 @@ class RegisterViewController: UIViewController {
         view.endEditing(true)
     }
     
+    /// Updata Ui after login error
+   
     
     ////////////////////////////////////////////// 
     
@@ -45,7 +48,10 @@ class RegisterViewController: UIViewController {
             
             if error != nil {
                 print(error!)
-                
+                self.logInFeedbackLabel.text = "email or user name is alred used"
+                self.logInFeedbackLabel.textColor = .red
+                SVProgressHUD.dismiss()
+
             } else {
                 
                 // success
@@ -58,14 +64,15 @@ class RegisterViewController: UIViewController {
         
     }
     
-    // Back Button Fucntion
+
+    /// Back Button Fucntion
     @IBAction func backButtonPressed(_ sender: Any) {
         
          self.performSegue(withIdentifier: "goToWelcomeScreem", sender: self)
     }
     
     
-    // About Button Function
+    /// About Button Function
     @IBAction func AboutPressed(_ sender: Any) {
     }
     
