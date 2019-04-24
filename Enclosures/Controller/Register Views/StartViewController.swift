@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartViewController.swift
 //  Enclosures
 //
 //  Created by Christiano Mere on 30/03/2019.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class StartViewController: UIViewController, CLLocationManagerDelegate {
 
     //Declare instance variables here
     let locationManager = CLLocationManager()

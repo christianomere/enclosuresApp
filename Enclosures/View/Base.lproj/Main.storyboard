@@ -26,10 +26,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="k4z-JA-TXn">
             <objects>
-                <viewController id="BLW-pa-P2M" customClass="ViewController" customModule="Enclosures" sceneMemberID="viewController">
+                <viewController id="BLW-pa-P2M" customClass="StartViewController" customModule="Enclosures" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fHX-F8-3tk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,6 +505,9 @@
                                                         <state key="normal" title="yes">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="fristQuestionButtonYes:" destination="kUV-cf-fwx" eventType="touchUpInside" id="wOn-Yi-m5H"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHo-xY-jhN">
                                                         <rect key="frame" x="44" y="0.0" width="18" height="29"/>
@@ -518,6 +521,9 @@
                                                         <state key="normal" title="no">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="fristQuestionButtonNo:" destination="kUV-cf-fwx" eventType="touchUpInside" id="ZPZ-xk-JXg"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -554,6 +560,9 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                                                         <state key="normal" title="yes">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="secundQuestionButtonYes:" destination="kUV-cf-fwx" eventType="touchUpInside" id="aqS-P7-l2D"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrS-QO-rAO">
                                                         <rect key="frame" x="44" y="0.0" width="18" height="29"/>
@@ -567,6 +576,9 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                                                         <state key="normal" title="no">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="secundQuestionButtonNo:" destination="kUV-cf-fwx" eventType="touchUpInside" id="PEX-g1-nTZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -594,6 +606,9 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                                                 <state key="normal" title="back">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="backButton:" destination="kUV-cf-fwx" eventType="touchUpInside" id="qkw-XL-lzd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -615,15 +630,18 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                                     <constraint firstItem="gXR-4t-nj6" firstAttribute="leading" secondItem="jAa-QJ-oCG" secondAttribute="leading" id="zOm-9G-XWJ"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIg-3e-bEE">
-                                <rect key="frame" x="318" y="44" width="41" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIg-3e-bEE">
+                                <rect key="frame" x="353" y="44" width="41" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="v7t-WU-Axm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Grafier-RegularDisplay" family="Grafier" pointSize="13"/>
                                 <state key="normal" title="logout">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="logOutPressed:" destination="Dt8-t7-YXn" eventType="touchUpInside" id="q22-5T-aeF"/>
+                                    <action selector="logoutButton:" destination="kUV-cf-fwx" eventType="touchUpInside" id="T66-Tm-6Tt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -632,13 +650,18 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                             <constraint firstAttribute="bottom" secondItem="jAa-QJ-oCG" secondAttribute="bottom" constant="20" id="3iD-7z-d3Y"/>
                             <constraint firstItem="jAa-QJ-oCG" firstAttribute="leading" secondItem="73H-kl-iAR" secondAttribute="leading" constant="20" id="Ad2-e5-6Kk"/>
                             <constraint firstItem="jAa-QJ-oCG" firstAttribute="top" secondItem="73H-kl-iAR" secondAttribute="top" constant="100" id="V7k-hq-3Fc"/>
+                            <constraint firstItem="FIg-3e-bEE" firstAttribute="top" secondItem="73H-kl-iAR" secondAttribute="top" id="oqF-Pm-6TH"/>
                             <constraint firstItem="73H-kl-iAR" firstAttribute="trailing" secondItem="jAa-QJ-oCG" secondAttribute="trailing" constant="20" id="rmU-8S-6Xe"/>
+                            <constraint firstItem="73H-kl-iAR" firstAttribute="trailing" secondItem="FIg-3e-bEE" secondAttribute="trailing" constant="20" id="uvj-qj-21J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="73H-kl-iAR"/>
                     </view>
                     <connections>
+                        <outlet property="fristQuestionAlert" destination="G04-Pf-kH3" id="lPO-i3-6XI"/>
+                        <outlet property="secoundQuestionTitle" destination="PhB-q8-sUZ" id="qGo-EP-hd6"/>
+                        <outlet property="secundQuestionAlert" destination="CiU-mD-QA3" id="aaT-iA-Kzi"/>
                         <segue destination="Dt8-t7-YXn" kind="show" identifier="backOneVC" id="i29-07-4cR"/>
-                        <segue destination="zT2-AZ-M3C" kind="show" identifier="goToPlaceVC" id="4Um-Np-5cr"/>
+                        <segue destination="zT2-AZ-M3C" kind="show" identifier="goToPlacesVC" id="4Um-Np-5cr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CT8-3z-pc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -719,6 +742,9 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                                                 <state key="normal" title="back">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="backButton:" destination="zT2-AZ-M3C" eventType="touchUpInside" id="hkf-LS-eiA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -755,6 +781,7 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                     </view>
                     <connections>
                         <segue destination="kUV-cf-fwx" kind="show" identifier="backOneVC" id="8pY-7g-wJf"/>
+                        <segue destination="cFn-LL-jbk" kind="show" identifier="goToSubmitVC" id="TLb-v9-hq0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nB-CU-Nut" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -778,6 +805,9 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                                 <state key="normal" title="start">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="phE-2H-GMe" eventType="touchUpInside" id="H4d-Cs-v1g"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmW-fB-MB3">
                                 <rect key="frame" x="70" y="177" width="274" height="272"/>
@@ -815,6 +845,9 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EKH-Pz-4WJ"/>
                     </view>
+                    <connections>
+                        <segue destination="JUS-1b-9d7" kind="show" identifier="goToCounterVC" id="843-Xr-fHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nab-ub-oA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -829,62 +862,81 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Zzs-1D-cTa">
-                                <rect key="frame" x="0.0" y="104" width="414" height="738"/>
+                                <rect key="frame" x="20" y="144" width="374" height="698"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="round 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLu-Yy-Nhh">
-                                        <rect key="frame" x="176" y="0.0" width="62.5" height="17"/>
+                                        <rect key="frame" x="156" y="0.0" width="62.5" height="17"/>
                                         <fontDescription key="fontDescription" name="Grafier-RegularText" family="Grafier" pointSize="17"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxg-ZY-cG5">
-                                        <rect key="frame" x="174.5" y="117" width="65" height="113"/>
+                                        <rect key="frame" x="154.5" y="117" width="65" height="123"/>
                                         <fontDescription key="fontDescription" name="Grafier-BlackDisplay" family="Grafier" pointSize="17"/>
                                         <state key="normal" title="restart">
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ResetCouterPressed:" destination="JUS-1b-9d7" eventType="touchUpInside" id="692-2P-mdb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thj-Pb-oM5">
-                                        <rect key="frame" x="100.5" y="330" width="213" height="150"/>
-                                        <fontDescription key="fontDescription" name="Grafier-BlackDisplay" family="Grafier" pointSize="150"/>
+                                        <rect key="frame" x="116" y="340" width="142" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="jdM-ff-AEP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Grafier-BlackDisplay" family="Grafier" pointSize="100"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sj8-TQ-Qk9">
-                                        <rect key="frame" x="179.5" y="580" width="55" height="29"/>
+                                        <rect key="frame" x="159.5" y="540" width="55" height="29"/>
                                         <fontDescription key="fontDescription" name="Grafier-BlackDisplay" family="Grafier" pointSize="17"/>
                                         <state key="normal" title="pause">
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="pauseCounterPressed:" destination="JUS-1b-9d7" eventType="touchUpInside" id="rnx-Da-OPu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jas-pS-UPK">
-                                        <rect key="frame" x="186.5" y="709" width="41" height="29"/>
+                                        <rect key="frame" x="166.5" y="669" width="41" height="29"/>
                                         <fontDescription key="fontDescription" name="Grafier-RegularDisplay" family="Grafier" pointSize="17"/>
                                         <state key="normal" title="rules">
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rulesButtonPressed:" destination="JUS-1b-9d7" eventType="touchUpInside" id="j7l-Q2-qqp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Zzs-1D-cTa" firstAttribute="top" secondItem="Td1-Ea-Jny" secondAttribute="top" constant="60" id="5JZ-wf-iQF"/>
-                            <constraint firstItem="Td1-Ea-Jny" firstAttribute="trailing" secondItem="Zzs-1D-cTa" secondAttribute="trailing" id="MLF-AH-j7B"/>
-                            <constraint firstItem="Td1-Ea-Jny" firstAttribute="bottom" secondItem="Zzs-1D-cTa" secondAttribute="bottom" constant="20" id="Rwm-df-8u1"/>
-                            <constraint firstItem="Zzs-1D-cTa" firstAttribute="leading" secondItem="Td1-Ea-Jny" secondAttribute="leading" id="hj9-XL-RCF"/>
+                            <constraint firstItem="Td1-Ea-Jny" firstAttribute="trailing" secondItem="Zzs-1D-cTa" secondAttribute="trailing" constant="20" id="0bC-Ky-8GX"/>
+                            <constraint firstItem="Zzs-1D-cTa" firstAttribute="top" secondItem="Td1-Ea-Jny" secondAttribute="top" constant="100" id="CTt-k8-eMk"/>
+                            <constraint firstItem="Td1-Ea-Jny" firstAttribute="bottom" secondItem="Zzs-1D-cTa" secondAttribute="bottom" constant="20" id="qi3-Be-Egz"/>
+                            <constraint firstItem="Zzs-1D-cTa" firstAttribute="leading" secondItem="Td1-Ea-Jny" secondAttribute="leading" constant="20" id="w6L-E8-ZXh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Td1-Ea-Jny"/>
                     </view>
+                    <connections>
+                        <outlet property="counterLable" destination="Thj-Pb-oM5" id="zrF-Fc-JeN"/>
+                        <outlet property="pauseButtonLabel" destination="Sj8-TQ-Qk9" id="yrf-nZ-HfE"/>
+                        <outlet property="roundDisplay" destination="sLu-Yy-Nhh" id="yE0-j2-j4a"/>
+                        <segue destination="phE-2H-GMe" kind="show" identifier="backOnVC" id="C9x-LT-hqy"/>
+                        <segue destination="7Es-Fp-7YZ" kind="show" identifier="" id="hZQ-la-LYl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gh-8x-40M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="356.52173913043481" y="837.72321428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Ranking View Controller-->
         <scene sceneID="UQk-Mc-M6u">
             <objects>
-                <viewController id="7Es-Fp-7YZ" sceneMemberID="viewController">
+                <viewController id="7Es-Fp-7YZ" customClass="RankingViewController" customModule="Enclosures" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UiO-zQ-PZ1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -953,6 +1005,9 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4nC-Qy-mpG"/>
                     </view>
+                    <connections>
+                        <segue destination="cFn-LL-jbk" kind="show" identifier="goToSubmitVC" id="fdg-Hj-igz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6R-tu-zwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1061,10 +1116,13 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MAi-X7-ult"/>
                     </view>
+                    <connections>
+                        <segue destination="IV4-iX-61K" kind="show" identifier="goToFinalVC" id="BJW-C7-NcN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LaK-4f-2WM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2430.434782608696" y="43.526785714285715"/>
+            <point key="canvasLocation" x="2433" y="46"/>
         </scene>
         <!--Final Credit View Controller-->
         <scene sceneID="su4-hM-Sfs">
@@ -1165,6 +1223,9 @@ Quis ipsum suspendisse ultrices Lorem ipsum dolor sit amet, consectetur adipisci
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xX4-O8-NMN"/>
                     </view>
+                    <connections>
+                        <segue destination="Dt8-t7-YXn" kind="show" identifier="goToJoainAGroupBC" id="lPD-bQ-F5D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wg5-8J-fhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1172,6 +1233,8 @@ Quis ipsum suspendisse ultrices Lorem ipsum dolor sit amet, consectetur adipisci
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="843-Xr-fHL"/>
+        <segue reference="TLb-v9-hq0"/>
         <segue reference="8pY-7g-wJf"/>
         <segue reference="i29-07-4cR"/>
         <segue reference="5LL-X9-d9g"/>

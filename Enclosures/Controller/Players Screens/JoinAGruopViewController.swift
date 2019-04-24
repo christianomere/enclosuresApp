@@ -49,6 +49,13 @@ class JoinAGruopViewController: UIViewController, UITableViewDelegate, UITableVi
     
     // Ready Button Function
     @IBAction func readyButtonPressed(_ sender: Any) {
+        
+        func readyPressed() {
+            performSegue(withIdentifier: "goToQuestionVC", sender: self)
+        }
+        
+    readyPressed()
+        
     }
     
     // Search Again Button Pressed
