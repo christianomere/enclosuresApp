@@ -14,7 +14,7 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var roundDisplay: UILabel!
     @IBOutlet weak var pauseButtonLabel: UIButton!
     
-    var startValeu:Int = 5
+    var startValeu:Int = 60
     var counting:Bool = false
     let endValeu:Int = 0
 

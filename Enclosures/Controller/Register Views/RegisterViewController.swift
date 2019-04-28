@@ -16,8 +16,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var logInFeedbackLabel: UILabel!
     
-    /// hide Keybord
-    func HidKeyboard(){
+    // MARK: hide Keybord
+    func HidKeyboard() {
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeboard))
         view.addGestureRecognizer(tap)
         
@@ -27,14 +27,12 @@ class RegisterViewController: UIViewController {
         view.endEditing(true)
     }
     
-    /// Updata Ui after login error
-   
-    
-    ////////////////////////////////////////////// 
+   //////////////////////////////////////////////
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         
         self.HidKeyboard()
@@ -43,7 +41,8 @@ class RegisterViewController: UIViewController {
     @IBAction func enterPressed(_ sender: Any) {
         
         SVProgressHUD.show()
-        //New user Fire base setup
+        
+        // MARK: New user Fire base setup
         Auth.auth().createUser(withEmail: emailTextField.text!, password: userNameTextField.text!) { (user,error) in
             
             if error != nil {
@@ -55,9 +54,10 @@ class RegisterViewController: UIViewController {
             } else {
                 
                 // success
-                print("Registration Successful")
                 self.performSegue(withIdentifier: "goToJoinGruop", sender: self)
+               
                 SVProgressHUD.dismiss()
+                
             }
             
         }
@@ -65,14 +65,14 @@ class RegisterViewController: UIViewController {
     }
     
 
-    /// Back Button Fucntion
+    // MARK: Back Button Fucntion
     @IBAction func backButtonPressed(_ sender: Any) {
         
          self.performSegue(withIdentifier: "goToWelcomeScreem", sender: self)
     }
     
     
-    /// About Button Function
+    // MARK: About Button Function
     @IBAction func AboutPressed(_ sender: Any) {
     }
     

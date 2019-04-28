@@ -30,6 +30,7 @@ class StartViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func aboutPressed(_ sender: Any) {
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

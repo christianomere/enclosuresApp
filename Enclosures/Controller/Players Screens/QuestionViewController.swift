@@ -25,11 +25,13 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func fristQuestionButtonYes(_ sender: Any) {
-       frisQuestionAnwser = true
+     
+        frisQuestionAnwser = true
         
     }
     
     @IBAction func fristQuestionButtonNo(_ sender: Any) {
+       
         frisQuestionAnwser = false
     }
     

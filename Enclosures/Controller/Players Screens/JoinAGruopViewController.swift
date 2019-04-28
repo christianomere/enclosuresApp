@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class JoinAGruopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
@@ -32,6 +33,8 @@ class JoinAGruopViewController: UIViewController, UITableViewDelegate, UITableVi
     //Log out Button Pressed  (back to ViewController)
     @IBAction func logOutPressed(_ sender: Any) {
         
+        SVProgressHUD.show()
+        
         do {
             try Auth.auth().signOut()
             navigationController?.popToRootViewController(animated: true)
@@ -40,6 +43,27 @@ class JoinAGruopViewController: UIViewController, UITableViewDelegate, UITableVi
             
             print("error, there, was a problem singing out.")
 
+        }
+        
+       
+        SVProgressHUD.show()
+        
+        //MARK: Delete user from firebase
+        let user = Auth.auth().currentUser
+
+        user?.delete { error in
+            if error != nil {
+                // An error happened.
+                print("logout error")
+                 SVProgressHUD.dismiss()
+            } else {
+                // Account deleted.
+                self.performSegue(withIdentifier: "goToRegister", sender: self)
+                 SVProgressHUD.dismiss()
+                print ("logout successe")
+                SVProgressHUD.dismiss()
+
+            }
         }
         
     }
