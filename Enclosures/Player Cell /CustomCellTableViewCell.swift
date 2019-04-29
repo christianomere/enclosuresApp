@@ -14,10 +14,12 @@ class CustomCellTableViewCell: UITableViewCell {
     @IBOutlet weak var initialPlayerCell: UILabel!
     @IBOutlet weak var userNamePlayerCell: UILabel!
     
+    var userNameToDisplay : String = "" 
     
     override func awakeFromNib() {
-        super.awakeFromNib()
+        super.awakeFromNib()    
         // Initialization code
+        
     }
 
     

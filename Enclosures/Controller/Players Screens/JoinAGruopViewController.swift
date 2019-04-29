@@ -98,6 +98,9 @@ class JoinAGruopViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "customPlayerCell", for: indexPath) as! CustomCellTableViewCell
         
         // display number of register users near by.
+       // let userNamesArray = ["Christiano Mere", "Lizzie Hudson"]
+       // let initialCellArray = ["CM", "LH"]
+        
         let userNamesArray = ["Christiano Mere", "Lizzie Hudson"]
         let initialCellArray = ["CM", "LH"]
         
@@ -113,10 +116,6 @@ class JoinAGruopViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    
-    
-    //TODO: Declare tableViewTapped here:
-    
     
     
     ///TODO: Declare configureTableView here:

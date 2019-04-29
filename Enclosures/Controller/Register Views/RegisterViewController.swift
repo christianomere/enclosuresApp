@@ -16,6 +16,10 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var logInFeedbackLabel: UILabel!
     
+    //MARK: Database Connetcion
+    let userNameDB = Database.database().reference().child("userNameToDisplay")
+    let userNameDictionary = ["userNameToDisplay": Auth.auth().currentUser?.email]
+
     // MARK: hide Keybord
     func HidKeyboard() {
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeboard))
@@ -61,6 +65,26 @@ class RegisterViewController: UIViewController {
             }
             
         }
+        
+        //MARK: making the data base of usernames
+        userNameTextField.endEditing(true)
+        
+        
+        let userNameDB = Database.database().reference().child("userName")
+        let userDictionary = ["Sender": Auth.auth().currentUser?.email, "userName": userNameTextField.text!]
+        
+        userNameDB.childByAutoId().setValue(userDictionary) {
+            (error, reference) in
+           
+            if error != nil {
+                print (error!)
+            } else {
+                print("message save")
+                
+               
+            }
+        }
+        
         
     }
     

@@ -660,7 +660,7 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CT8-3z-pc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="357" y="46"/>
+            <point key="canvasLocation" x="284" y="46"/>
         </scene>
         <!--Place View Controller-->
         <scene sceneID="fZH-83-qbK">
@@ -789,7 +789,7 @@ d3JpdGUgdGhpcyB3b3JkIG9uIHRoZSADZ3JvdW5kYW5kIHRhcCB3aGVuIHJlYWR5Lg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nB-CU-Nut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="46"/>
+            <point key="canvasLocation" x="922" y="46"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="yP2-hB-dcu">
@@ -854,7 +854,7 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nab-ub-oA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-349" y="838"/>
+            <point key="canvasLocation" x="1878" y="44"/>
         </scene>
         <!--Counter View Controller-->
         <scene sceneID="Ct1-wV-IIF">
@@ -989,7 +989,7 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gh-8x-40M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356.52173913043481" y="837.72321428571422"/>
+            <point key="canvasLocation" x="2512" y="44"/>
         </scene>
         <!--Ranking View Controller-->
         <scene sceneID="UQk-Mc-M6u">
@@ -1101,7 +1101,7 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6R-tu-zwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063.768115942029" y="837.72321428571422"/>
+            <point key="canvasLocation" x="3145" y="44"/>
         </scene>
         <!--Submit New Place View Controller-->
         <scene sceneID="uxU-Ur-Jrb">
@@ -1240,7 +1240,7 @@ cmEgbWFlY2VuYXMgYWNjdW1zYW4gbGFjdXMgdmVsIGZhY2lsaXNpcy4gA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LaK-4f-2WM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2428.985507246377" y="43.526785714285715"/>
+            <point key="canvasLocation" x="4046" y="44"/>
         </scene>
         <!--Final Credit View Controller-->
         <scene sceneID="su4-hM-Sfs">
@@ -1357,14 +1357,14 @@ Quis ipsum suspendisse ultrices Lorem ipsum dolor sit amet, consectetur adipisci
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </objects>
-            <point key="canvasLocation" x="3135" y="44"/>
+            <point key="canvasLocation" x="4690" y="46"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="TLb-v9-hq0"/>
         <segue reference="Vkz-fM-Dqd"/>
-        <segue reference="Tcu-0i-3mb"/>
-        <segue reference="zmu-ZI-jdy"/>
+        <segue reference="xa2-NY-pka"/>
+        <segue reference="lPD-bQ-F5D"/>
         <segue reference="5LL-X9-d9g"/>
     </inferredMetricsTieBreakers>
 </document>
